@@ -1,0 +1,87 @@
+.pointer {
+  cursor: pointer;
+}
+.w-100 {
+  width: 100%;
+}
+.custom-btn-hover {
+  color: #fff;
+  background-color: #000;
+  border: #e4e4e4;
+  cursor: pointer;
+}
+.custom-btn {
+  padding: 5px 10px;
+  border: solid 1px #000;
+  color: #343434;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+body main hgroup > h1,
+body main hgroup > h4 {
+  width: 100%;
+  text-align: center;
+}
+body main section {
+  width: 100%;
+  display: table;
+}
+body main section h2 {
+  width: 100%;
+  text-indent: 10%;
+}
+body main section#btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+body main section#btn input[type="button"]:hover,
+body main section#btn input[type="button"].active {
+  color: #fff;
+  background-color: #000;
+  border: #e4e4e4;
+  cursor: pointer;
+}
+body main section#btn input[type="button"] {
+  padding: 5px 10px;
+  border: solid 1px #000;
+  color: #343434;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+body main section form ul {
+  list-style: none;
+  padding-left: 10%;
+}
+body main section form ul > li {
+  list-style: none;
+}
+body main section form ul > li > input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+  width: 60%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: solid 1px #000;
+}
+body main section form ul > li > input[type="submit"]:hover {
+  color: #fff;
+  background-color: #000;
+  border: #e4e4e4;
+  cursor: pointer;
+}
+body main section form ul > li > input[type="submit"] {
+  padding: 5px 10px;
+  border: solid 1px #000;
+  color: #343434;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+body main section form ul > li input[type=radio] {
+  cursor: pointer;
+}
+body main section form ul > li label.r-label {
+  cursor: pointer;
+}

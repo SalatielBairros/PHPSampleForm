@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TRABALHO 2 WEB 1</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <script src="js/jquery.maskedinput-master/lib/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.maskedinput-master/src/jquery.maskedinput.js"></script>
+    <script src="js/site.js"></script>    
+    <style>
+        section>form>ul>li {
+            width: 100%;
+            float: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }     
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <hgroup>
+            <h1>TRABALHO 2 P2</h1>
+            <h4>SALATIEL BAIRROS (201611865)</h4>
+        </hgroup>
+        <section id="btn">
+            <input type="button" id="btnAluno" value="Aluno" />
+            <input type="button" id="btnFuncionario" value="Funcionário" />
+        </section>
+        <section id="sAluno">
+            <h2>Cadastro Aluno</h2>
+            <form name="cadastroAluno" method="post" action="bd_connection.php">
+                <ul>
+                    <li>
+                        <span>Nome</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtNome" name="nome" />
+                    </li>
+                    <li>
+                        <span>Nascimento</span>
+                    </li>
+                    <li>
+                        <input type="date" id="txtNascimento" name="nascimento" />
+                    </li>
+                    <li>
+                        <span>Nome Mãe</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtMae" name="mae" />
+                    </li>
+                    <li>
+                        <span>Nome Pai</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtPai" name="pai" />
+                    </li>
+                    <li>
+                        <span>Telefone</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtTelefone" name="telefone" />
+                    </li>
+                    <li>
+                        <span>E-mail</span>
+                    </li>
+                    <li>
+                        <input type="email" id="txtEmail" name="email" />
+                    </li>
+                    <li>
+                        <span>Série</span>
+                    </li>
+                    <li>
+                        <select id="drpSerie" name="serie">
+                            <option value="0">Pré</option>
+                            <option value="1">Primeira Série</option>
+                            <option value="2">Segunda Série</option>
+                            <option value="2">Terceira Série</option>
+                            <option value="4">Quarta Série</option>
+                            <option value="5">Quinta Série</option>
+                            <option value="6">Sexta Série</option>
+                            <option value="7">Sétima Série</option>
+                            <option value="8">Oitava Série</option>
+                            <option value="9">Primeiro Ano</option>
+                            <option value="10">Segundo Ano</option>
+                            <option value="11">Terceiro Ano</option>                            
+                        </select>
+                    </li>
+                    <li>
+                        <span>Turno Preferencial</span>
+                    </li>
+                    <li>
+                        <input type="radio" id="txtManha" name="turno" value="manha" />
+                        <label for="txtManha" class="r-label">Manhã</label>
+                        <input type="radio" id="txtTarde" name="turno" value="tarde" />
+                        <label for="txtTarde" class="r-label">Tarde</label>
+                    </li>
+                    <li>
+                        <span>Atividades Extra-Curriculares</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cbInformatica" name="atividades" value="informatica" />
+                        <label for="cbInformatica" class="r-label">Informática</label>
+                        <input type="checkbox" id="cbMusica" name="atividades" value="musica" />
+                        <label for="cbMusica" class="r-label">Música</label>
+                        <input type="checkbox" id="cbDanca" name="atividades" value="danca" />
+                        <label for="cbDanca" class="r-label">Dança</label>
+                        <input type="checkbox" id="cbPintura" name="atividades" value="pintura" />
+                        <label for="cbPintura" class="r-label">Pintura</label>
+                        <input type="checkbox" id="cbJudo" name="atividades" value="judo" />
+                        <label for="cbJudo" class="r-label">Judo</label>
+                        <input type="checkbox" id="cbFutebol" name="atividades" value="futebol" />
+                        <label for="cbFutebol" class="r-label">Futebol</label>
+                    </li>
+                    <li>
+                        <input type="submit" id="btnSalvarAluno" name="salvarAluno" value="Salvar" />
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section id="sFuncionario">
+            <h2>Cadastro Funcionário</h2>
+            <form name="cadastroFuncionario" method="post" action="fc_connection.php">
+                <ul>
+                    <li>
+                        <span>Nome</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtNomeFuncionario" name="nome" />
+                    </li>
+                    <li>
+                        <span>Nascimento</span>
+                    </li>
+                    <li>
+                        <input type="date" id="txtNascimentoFuncionario" name="nascimento" />
+                    </li>
+                    <li>
+                        <span>Endereço</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtEndereco" name="endereco" />
+                    </li>
+                    <li>
+                        <span>CPF</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtCPF" name="cpf" />
+                    </li>
+                    <li>
+                        <span>RG</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtRG" name="rg" />
+                    </li>
+                    <li>
+                        <span>Cargo</span>
+                    </li>
+                    <li>
+                        <input type="text" id="txtCargo" name="cargo" />
+                    </li>
+                    <li>
+                        <span>Admissão</span>
+                    </li>
+                    <li>
+                        <input type="date" id="txtAdmissao" name="admissao" />
+                    </li>
+                    <li>
+                        <input type="submit" id="btnSalvarFuncionario" name="salvarFuncionario" value="Salvar" />
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
