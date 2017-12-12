@@ -1,4 +1,4 @@
-# PHP SAMPLE PROJECT
+# PHP SAMPLE FORM
 
 ## Programação Web - FADERGS 2017/2
 
